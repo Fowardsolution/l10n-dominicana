@@ -1148,6 +1148,91 @@ msgid "Supplier Invoices"
 msgstr "Facturas de Proveedor"
 
 #. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ecf_minor_supplier
+msgid "Electronic Minor Expense Invoice"
+msgstr "Factura Gasto Menor Electrónica"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ncf_gov_client
+msgid "Government Bill"
+msgstr "Factura Gubernamental"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ecf_gov_client
+msgid "Electronic Government Invoice"
+msgstr "Factura Gubernamental Electrónica"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ncf_informal_supplier
+msgid "Purchase invoice"
+msgstr "Factura de Compra"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ecf_informal_supplier
+msgid "Electronic purchase invoice"
+msgstr "Factura de Compra Electrónica"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ncf_consumer_supplier
+msgid "Consumer bill"
+msgstr "Factura de Consumo"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ecf_consumer_supplier
+msgid "Electronic Consumer Bill"
+msgstr "Factura de Consumo Electrónica"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ncf_fiscal_client
+msgid "Tax Credit Invoice"
+msgstr "Factura de Crédito Fiscal"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ecf_fiscal_client
+msgid "Electronic Tax Credit Invoice"
+msgstr "Factura de Crédito Fiscal Electrónica"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ncf_export_client
+msgid "Export Invoice"
+msgstr "Factura de Exportación"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ecf_export_client
+msgid "Electronic Export Invoice"
+msgstr "Factura de Exportación Electrónica"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.non_fiscal_import_supplier
+msgid "Import Invoice"
+msgstr "Factura de Importación"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ncf_exterior_supplier
+msgid "Foreign Payment Invoice"
+msgstr "Factura de Pago al Exterior"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ecf_exterior_supplier
+msgid "Electronic Foreign Payment Invoice"
+msgstr "Factura de Pago al Exterior Electrónica"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ncf_special_client
+msgid "Special Regime Invoice"
+msgstr "Factura de Régimen Especial"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ecf_special_client
+msgid "Electronic Special Regime Invoice"
+msgstr "Factura de Régimen Especial Electrónica"
+
+#. module: l10n_do_accounting
+#: model:l10n_latam.document.type,report_name:l10n_do_accounting.ncf_unique_client
+msgid "Single Income Bill"
+msgstr "Factura de Único Ingreso"
+
+#. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_journal.py:0
 #, python-format
