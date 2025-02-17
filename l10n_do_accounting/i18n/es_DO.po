@@ -252,19 +252,36 @@ msgstr "11 - Gastos de Seguros"
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
 msgid ""
 "<br/>\n"
-"                        <strong>Código Modificación:</strong>"
+"                        <strong>Modification Code:</strong>"
 msgstr ""
+"<br/>\n"
+"                        <strong>Código Modificación:</strong>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
 msgid ""
 "<br/>\n"
-"                    <strong>Contacto:</strong>"
+"                    <strong>Contact:</strong>"
 msgstr ""
+"<br/>\n"
+"                    <strong>Contacto:</strong>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.report_invoice_document_inherited
 msgid ""
+"<span>\n"
+"                        <strong>Original:</strong>\n"
+"                        Client\n"
+"                    </span>\n"
+"                    <br/>\n"
+"                    <span>\n"
+"                        <strong>Copy:</strong>\n"
+"                        seller\n"
+"                    </span>\n"
+"                    <br/>\n"
+"                    <br/>"
+
+msgstr ""
 "<span>\n"
 "                        <strong>Original:</strong>\n"
 "                        Cliente\n"
@@ -276,7 +293,6 @@ msgid ""
 "                    </span>\n"
 "                    <br/>\n"
 "                    <br/>"
-msgstr ""
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.report_invoice_document_inherited
@@ -308,8 +324,8 @@ msgstr ""
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "<strong>Fecha Emisión:</strong>"
-msgstr ""
+msgid "<strong>Issue Date:</strong>"
+msgstr "<strong>Fecha Emisión:</strong>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.report_invoice_document_inherited
@@ -318,13 +334,13 @@ msgstr ""
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "<strong>NCF modificado:</strong>"
-msgstr ""
+msgid "<strong>NCF modified:</strong>"
+msgstr "<strong>NCF modificado:</strong>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "<strong>Origen:</strong>"
-msgstr ""
+msgid "<strong>Origin:</strong>"
+msgstr "<strong>Origen:</strong>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
@@ -333,8 +349,8 @@ msgstr ""
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "<strong>Referencia:</strong>"
-msgstr ""
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Referencia:</strong>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
@@ -348,8 +364,8 @@ msgstr ""
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "<strong>Vence:</strong>"
-msgstr ""
+msgid "<strong>expire:</strong>"
+msgstr "<strong>Vence:</strong>"
 
 #. module: l10n_do_accounting
 #. odoo-python
@@ -582,7 +598,7 @@ msgstr "Tarjeta Crédito / Débito"
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
 msgid "Cédula:"
-msgstr ""
+msgstr "ID"
 
 #. module: l10n_do_accounting
 #: model:ir.ui.menu,name:l10n_do_accounting.menu_dgii_config
@@ -793,8 +809,8 @@ msgstr "Identificación"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "ID Cliente:"
-msgstr ""
+msgid "Customer ID:"
+msgstr "ID Cliente:"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move_line__l10n_do_itbis_amount
@@ -989,8 +1005,8 @@ msgstr "No se encontró facturas para esta operación"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "Nombre:"
-msgstr ""
+msgid "Name:"
+msgstr "Nombre:"
 
 #. module: l10n_do_accounting
 #. odoo-python
@@ -1318,8 +1334,8 @@ msgstr "Válida hasta"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "Vencimiento e-NCF:"
-msgstr ""
+msgid "e-NCF Expiration:"
+msgstr "Vencimiento e-NCF:"
 
 #. module: l10n_do_accounting
 #: model:ir.actions.act_window,name:l10n_do_accounting.action_vendor_in_debit_note
@@ -1336,8 +1352,8 @@ msgstr ""
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.informations
-msgid "Válida hasta:"
-msgstr ""
+msgid "Valid until:"
+msgstr "Válida hasta:"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,help:l10n_do_accounting.field_res_company__l10n_do_ecf_issuer
