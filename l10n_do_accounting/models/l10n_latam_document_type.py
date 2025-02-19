@@ -7,6 +7,7 @@ from odoo.exceptions import ValidationError
 class L10nLatamDocumentType(models.Model):
     _inherit = "l10n_latam.document.type"
 
+    report_name = fields.Char(translate=True)
     def _get_l10n_do_ncf_types(self):
         """Return a list of fiscal types and their respective sequence type to be used
         on sequences, journals and document types."""
