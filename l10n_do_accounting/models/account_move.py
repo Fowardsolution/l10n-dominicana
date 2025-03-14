@@ -550,8 +550,9 @@ class AccountMove(models.Model):
             ):
                 raise ValidationError(
                     _(
-                        "A VAT is mandatory for this type of NCF. "
-                        "Please set the current VAT of this client"
+                        "El RNC es obligatorio para este tipo de NCF. "
+                        "Por favor establezca un RNC para este cliente "
+                        f"{rec.partner_id.name} y  Factura {rec.name}"
                     )
                 )
         super(AccountMove, self - l10n_do_invoices)._check_invoice_type_document_type()
