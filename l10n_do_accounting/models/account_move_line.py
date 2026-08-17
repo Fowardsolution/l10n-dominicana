@@ -44,7 +44,39 @@ class AccountMoveLine(models.Model):
                 self.env["res.company"],  # company-less, pre-v17 record
             ):
                 group = legacy_group
+        if not group:
+            group = self._l10n_do_find_tax_group_by_name(company, code)
         return group or self.env["account.tax.group"]
+
+    @api.model
+    def _l10n_do_find_tax_group_by_name(self, company, code):
+        """Last resort lookup of a dominican tax group by its name.
+
+        An upgrade can leave the groups without a reachable xmlid: the ir.model.data
+        rows of the old chart template are dropped, and the v17 engine only creates
+        ``account.<company_id>_tax_group_<code>`` for companies whose chart it
+        installs itself. The records survive with their names ('ITBIS', 'ISR'), so
+        match on those before giving up, otherwise a company that does have the
+        dominican taxes cannot issue a single fiscal document.
+
+        Only exact names and 'CODE <something>' variants ('ITBIS 18%') are accepted:
+        a loose match could pick up a different group ('Retenciones') and send wrong
+        amounts to the DGII, which is worse than the UserError the callers raise.
+        """
+        domain = [("company_id", "in", (company.id, False))]
+        Group = self.env["account.tax.group"]
+        group = Group.search(domain + [("name", "=ilike", code)], limit=1)
+        if not group:
+            group = Group.search(domain + [("name", "=ilike", "%s %%" % code)], limit=1)
+        if group:
+            _logger.info(
+                "Dominican tax group '%s' of company %s resolved by name (%s); "
+                "its xmlid is missing, likely dropped by an upgrade.",
+                code,
+                company.display_name,
+                group.name,
+            )
+        return group
 
     @api.depends("quantity", "discount", "price_unit", "tax_ids", "currency_id")
     def _compute_totals(self):
